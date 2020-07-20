@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      table,
+      td {
+        width: 300px;
+        border-spacing: 1em;
+        align-content: center;
+        vertical-align: top;
+      }
+      table {
+        border: 1px solid;
+      }
+      .btn {
+        width: 100%;
+      }
+      td.genre {
+        border-top: solid 1px;
+        border-left: solid 1px;
+        border-bottom: solid 1px;
+      }
+      td.genre2 {
+        border-top: solid 1px;
+        border-right: solid 1px;
+        border-bottom: solid 1px;
+      }
+      td.genre {
+        border: solid 1px;
+      }
+      .genreBtn {
+        text-align: left;
+        margin-left: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <table align="center">
+      <tr>
+        <td></td>
+        <td><label for="name">Book title: </label></td>
+        <td><input type="text" /></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><label for="name">Author:</label></td>
+        <td><input type="text" required /></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td align="right">
+          <label for="check1">In store</label>
+          <input type="checkbox" name="check1" checked />
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td colspan="2" class="genre">
+          <label for="name">Genre :</label> <br />
+          <div class="genreBtn">
+            <input type="radio" name="radAnswer" /> Poetry <br />
+            <input type="radio" name="radAnswer" /> Horror<br />
+            <input type="radio" name="radAnswer" /> Short story <br />
+            <input type="radio" name="radAnswer" /> Fantasy <br />
+            <input type="radio" name="radAnswer" /> Drama <br />
+            <input type="radio" name="radAnswer" checked /> Tragedy <br />
+          </div>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <button class="btn">Apply</button>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
